@@ -1,0 +1,210 @@
+{
+  "info": {
+    "_postman_id": "ce4e2c84-0c6f-4e91-95da-ce6d4b302ea4",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54077171",
+    "_collection_link": "https://go.postman.co/collection/54077171-ce4e2c84-0c6f-4e91-95da-ce6d4b302ea4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userName\": \"Test2003\",\n  \"firstName\": \"Test\",\n  \"lastName\": \"Test\",\n  \"email\": \"Test2003@example.com\",\n  \"password\": \"test123\",\n  \"rePassword\": \"test123\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/User/Register",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "User",
+            "Register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"Test2003@example.com\",\n  \"password\": \"test123\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/User/Authentication",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "User",
+            "Authentication"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIzYzMxNzRjNi03OTAzLTRhNGYtYjI2My1lNTczMTVlOGRiZGIiLCJpYXQiOiIwNC8xOC8yMDI2IDA5OjM4OjIyIiwiVXNlcklkIjoiNmI4YTI5MDUtM2VmOC00ZTQ3LTY0MmUtMDhkZTc2OTcxYWI5IiwiRW1haWwiOiJUZXN0MjAwM0BleGFtcGxlLmNvbSIsIlVzZXJOYW1lIjoiVGVzdDIwMDMiLCJleHAiOjE3NzY1MjY3MDIsImlzcyI6Ik1vdmllQ2F0YWxvZ19BcHBfU29mdFVuaSIsImF1ZCI6Ik1vdmllQ2F0YWxvZ19XZWJBUElfU29mdFVuaSJ9.ffJblsdzGllRKPWqB2XLB-eutBExooFqaJsA2dTnELE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Testmovie\",\n  \"description\": \"Comedy\",\n  \"posterUrl\": \"\",\n  \"trailerLink\": \"\",\n  \"isWatched\": true\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/Movie/Create",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Movie",
+            "Create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIzYzMxNzRjNi03OTAzLTRhNGYtYjI2My1lNTczMTVlOGRiZGIiLCJpYXQiOiIwNC8xOC8yMDI2IDA5OjM4OjIyIiwiVXNlcklkIjoiNmI4YTI5MDUtM2VmOC00ZTQ3LTY0MmUtMDhkZTc2OTcxYWI5IiwiRW1haWwiOiJUZXN0MjAwM0BleGFtcGxlLmNvbSIsIlVzZXJOYW1lIjoiVGVzdDIwMDMiLCJleHAiOjE3NzY1MjY3MDIsImlzcyI6Ik1vdmllQ2F0YWxvZ19BcHBfU29mdFVuaSIsImF1ZCI6Ik1vdmllQ2F0YWxvZ19XZWJBUElfU29mdFVuaSJ9.ffJblsdzGllRKPWqB2XLB-eutBExooFqaJsA2dTnELE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \t\"title\": \"TestmovieEdit\",\n  \t\"description\": \"string\",\n  \t\"posterUrl\": \"\",\n  \t\"trailerLink\": \"\",\n  \t\"isWatched\": true\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/Movie/Edit?movieId=cf4a6056-314d-4679-dcca-08de76979b7f",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Movie",
+            "Edit"
+          ],
+          "query": [
+            {
+              "key": "movieId",
+              "value": "cf4a6056-314d-4679-dcca-08de76979b7f"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIzYzMxNzRjNi03OTAzLTRhNGYtYjI2My1lNTczMTVlOGRiZGIiLCJpYXQiOiIwNC8xOC8yMDI2IDA5OjM4OjIyIiwiVXNlcklkIjoiNmI4YTI5MDUtM2VmOC00ZTQ3LTY0MmUtMDhkZTc2OTcxYWI5IiwiRW1haWwiOiJUZXN0MjAwM0BleGFtcGxlLmNvbSIsIlVzZXJOYW1lIjoiVGVzdDIwMDMiLCJleHAiOjE3NzY1MjY3MDIsImlzcyI6Ik1vdmllQ2F0YWxvZ19BcHBfU29mdFVuaSIsImF1ZCI6Ik1vdmllQ2F0YWxvZ19XZWJBUElfU29mdFVuaSJ9.ffJblsdzGllRKPWqB2XLB-eutBExooFqaJsA2dTnELE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/Movie/Delete?movieId=cf4a6056-314d-4679-dcca-08de76979b7f",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Movie",
+            "Delete"
+          ],
+          "query": [
+            {
+              "key": "movieId",
+              "value": "cf4a6056-314d-4679-dcca-08de76979b7f"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
